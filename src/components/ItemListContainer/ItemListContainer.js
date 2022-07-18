@@ -1,11 +1,16 @@
+import ItemCount from "../ItemCount/ItemCount"
+
 const ItemListContainer = ({season})=> {
     return (
         <>
             <h1>Bienvenido a Todo Libros en {season}</h1>
-            <img className="mainImage" src="../img/logo.png" alt="logo"/>
+           
+            <section>
+                <ItemCount stock="5" initial="1" />
+            </section>
         </>
         
     )
 }
 
-export default ItemListContainer
+export default ItemListContainer;
